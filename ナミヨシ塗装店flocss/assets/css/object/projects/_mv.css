@@ -1,0 +1,36 @@
+
+/*===============================================================================
+# メインビュー
+===============================================================================*/
+.p-mv__inner{
+    position: relative;
+    width: 100%;
+    height: inherit;
+    text-align: right;
+}
+.p-mv__title{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2.3em;
+    letter-spacing: 0.31em;
+    position: absolute;
+    top: 22%;
+    left: 23.5%;
+    text-align: left;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+
+}
+.p-mv__titile-logo{
+    height: auto;
+    width:4rem;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    text-align: left;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+.p-mv__title-logo img{
+    height: 100%;
+    width: 100%;
+}

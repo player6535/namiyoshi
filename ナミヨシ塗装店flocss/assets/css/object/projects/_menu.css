@@ -1,0 +1,77 @@
+
+.p-menu__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.p-menu__heading{
+}
+.p-menu__heading::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+    width: 50px;
+    height: 5px;
+    background-color: #F87D08;
+  }
+.p-menu__cards{
+    width: 50rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-menu__card{
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    width: 20rem;
+    background: #FFF7E3;
+}
+.p-card__title{
+    margin-top: 1rem;
+    font-size: 1.8em;
+    text-align: center;
+}
+.p-menu__detail-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    letter-spacing: 0.05em;
+    color: #F87D08;
+}
+.p-menu__text{
+    font-size: 1.7em;
+    font-family: 'Noto Serif JP', serif;
+}
+.p-menu__contact-button{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 50px;
+    background: #F87D08;
+    line-height: 64px;
+    text-align: center;
+    width: 340px;
+    border-radius: 50px;
+}
+.p-menu__contactCall-button{
+    border: 3px solid #F87D08;
+    font-family: 'Noto Serif JP', serif;
+    margin-top: 50px;
+    text-align: center;
+    padding: 1rem 0;
+    width: 30rem;
+}
+.p-menu__contactCall-text{
+    font-size: 1.4em;
+}
+.p-menu__contactCall-number{
+    font-weight: bold;
+    color: #F87D08;
+    font-size: 2.3em;
+    letter-spacing: 0.05em;
+}

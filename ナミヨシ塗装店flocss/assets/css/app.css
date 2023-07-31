@@ -1,0 +1,48 @@
+/*
+  レイヤーフォルダをまとめるファイル
+  htmlに読み込ませるのはこのファイルのみ
+ */
+
+
+/*// ==========================================================================
+// Foundation
+// ==========================================================================*/
+
+@import 'foundation/_reset.css';
+@import 'foundation/_base.css';
+@import 'foundation/_var.css';
+@import 'foundation/_font.css';
+
+/*// ==========================================================================
+// Layout
+// ==========================================================================*/
+
+@import 'layout/_footer.css';
+@import 'layout/_header.css';
+@import 'layout/_main.css';
+
+/*// ==========================================================================
+// Object
+// ==========================================================================*/
+
+/*// -----------------------------------------------------------------
+// Project
+// -----------------------------------------------------------------*/
+
+@import 'object/projects/_header.css';
+@import 'object/projects/_mv.css';
+@import 'object/projects/_vision.css';
+@import 'object/projects/_service.css';
+@import 'object/projects/_menu.css';
+@import 'object/projects/_footer.css';
+@import 'object/projects/_member.css';
+@import 'object/projects/_benefit.css';
+@import 'object/projects/_location.css';
+@import 'object/projects/_contact.css';
+@import 'object/projects/_news.css';
+
+/*// -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------*/
+
+@import 'object/utilities/_utility.css';

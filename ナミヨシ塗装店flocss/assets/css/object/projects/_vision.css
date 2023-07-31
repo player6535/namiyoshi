@@ -1,0 +1,13 @@
+.p-vision__heading{
+    color: #F87D08;
+}
+
+.p-vision__headingTexts{
+    width: 92%;
+    margin: 0 auto;
+}
+.p-vision__headingText{
+    line-height: 1.8em;
+    text-align: center;
+    font-weight: 300;
+}
