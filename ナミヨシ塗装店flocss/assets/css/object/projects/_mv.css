@@ -1,36 +1,85 @@
-
 /*===============================================================================
 # メインビュー
 ===============================================================================*/
-.p-mv__inner{
-    position: relative;
-    width: 100%;
-    height: inherit;
-    text-align: right;
+.p-mv {
+	position: relative;
+	width: 100%;
+	text-align: right;
 }
-.p-mv__title{
-    font-family: 'Noto Serif JP', serif;
-    font-size: 2.3em;
-    letter-spacing: 0.31em;
-    position: absolute;
-    top: 22%;
-    left: 23.5%;
-    text-align: left;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
 
+.p-mv__title {
+	font-family: 'Noto Serif JP', serif;
+	font-size: 2.3em;
+	letter-spacing: 0.45em;
+	line-height: 1.6em;
+	text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+	position: absolute;
+	height: 50vh;
+	top: 10rem;
+	left: 22rem;
+	text-align: left;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
 }
-.p-mv__titile-logo{
-    height: auto;
-    width:4rem;
-    position: absolute;
-    top: 50%;
-    left: 18%;
-    text-align: left;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
+
+.p-mv__title-logo {
+	height: 10rem;
+	width: auto;
+	position: absolute;
+	top: 23rem;
+	left: 16.5rem;
+	text-align: left;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
 }
-.p-mv__title-logo img{
-    height: 100%;
-    width: 100%;
+
+.p-mv__title-logo img {
+	height: 100%;
+	width: 100%;
+	filter: drop-shadow(2px 2px 6px #fff);
+}
+
+@media screen and (max-width: 899px) {
+	.p-mv {
+		top: 0px;
+	}
+
+	.p-mv__title {
+		font-size: 2em;
+		height: 100vh;
+		top: 2rem;
+		left: 20rem;
+		letter-spacing: 0.4em;
+		transform: translate(0%, 0%);
+	}
+
+	.p-mv__title-logo {
+		height: 7rem;
+		top: 14rem;
+		left: 18rem;
+		transform: translate(-50%, 0%);
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	/* sp */
+	.p-mv {
+		top: 0px;
+	}
+
+	.p-mv__title {
+		font-size: 1.4rem;
+		top: 3.5rem;
+		left: 6.5rem;
+		letter-spacing: 0.3em;
+		transform: translate(0%, 0%);
+	}
+
+	.p-mv__title-logo {
+		height: 6.8rem;
+		top: 10.5rem;
+		left: 4.8rem;
+		transform: translate(-50%, 0%);
+	}
 }

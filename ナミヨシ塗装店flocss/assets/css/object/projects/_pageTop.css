@@ -1,0 +1,50 @@
+/* ページトップへ戻るボタン */
+.p-pageTop {
+	display: none;
+	/* 非表示 */
+	position: relative;
+	position: fixed;
+	/* ページ右下に固定 */
+	right: 4rem;
+	bottom: 4rem;
+	width: 76px;
+	height: 76px;
+	line-height: 80px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 100px;
+	background-color: rgba(155, 131, 75, 0.31);
+	color: #54402D;
+	cursor: pointer;
+	font-family: 'Noto Serif JP';
+	/* カーソルをポインターに */
+	z-index: 1000;
+}
+
+.p-pageTopArrow {
+	border-bottom: solid 1px #54402D;
+	border-right: solid 1px #54402D;
+	width: 15px;
+	height: 15px;
+	transform: rotate(222deg);
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+
+/* activeクラスが付与されたとき */
+.p-pageTop.active {
+	display: block;
+}
+
+/* ホバーしたとき */
+.p-pageTop:hover {
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+@media screen and (max-width: 899px) {
+	.p-pageTop.active {
+		display: none;
+	}
+}

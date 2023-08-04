@@ -1,0 +1,13 @@
+.l-menu {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* sp */
+    .l-menu {
+        padding-top: 32px;
+        padding-bottom: 0px;
+    }
+}

@@ -1,40 +1,118 @@
+.p-service__container {
+	padding-top: 1.4rem;
+	padding-bottom: 9rem;
+	display: flex;
+	position: relative;
+}
 
-.p-service__container{
-    padding-top: 1.4rem;
-    padding-bottom: 9rem;
-    display: flex;
-    position: relative;
+.p-reverse {
+	display: flex;
+	flex-direction: row-reverse;
 }
-.p-reverse{
-    display: flex;
-    flex-direction: row-reverse;
+
+.p-service__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 30rem;
+	height: 19rem;
 }
-.p-service__item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 30rem;
-    height: 19rem;
+
+.p-service__initial {
+	color: #F87D08;
+	font-size: 2em;
 }
-.p-service__item img{
-   height: 100%;
-   width: 100%;
+
+.p-service__sub-title {
+	font-size: 1.2em;
+	font-weight: normal;
 }
-.p-service__item:nth-child(2){
-    top: 3rem;
-    right: 0;
-    width: 29rem;
-    position: absolute;
+
+.p-service__text {
+	font-size: 1.2em;
+	font-weight: lighter;
 }
-.p-service__item-reverse:nth-child(2){
-    top: 3rem;
-    left: 0;
-    width: 29rem;
-    position: absolute;
+
+.p-service__item img {
+	height: 100%;
+	width: 100%;
 }
-.p-service__body{
-    height: 100%;
-    padding: 3.5rem;
-    background: rgba(255,255,255,0.5);
+
+.p-service__item:nth-child(2) {
+	top: 3rem;
+	right: 0;
+	width: 29rem;
+	position: absolute;
+}
+
+.p-service__item-reverse:nth-child(2) {
+	top: 3rem;
+	left: 0;
+	width: 29rem;
+	position: absolute;
+}
+
+.p-service__body {
+	height: 100%;
+	padding: 3.5rem;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+
+	/* sp */
+	.p-service {
+		padding: 15px 15px 40px 15px;
+	}
+
+	.p-service__item {
+		width: auto;
+		height: 7rem;
+	}
+
+	.p-service__item img {
+		object-fit: cover;
+		object-position: top;
+	}
+
+	.p-service__container {
+		flex-direction: column;
+		margin-bottom: 1.4rem;
+	}
+
+	.p-service__body {
+		background-color: transparent;
+		padding: 1rem 0rem;
+	}
+
+	.p-service__initial {
+		font-size: 1em;
+	}
+
+	.p-service__sub-title {
+		margin-bottom: .7rem;
+	}
+
+	.p-service__text {
+		font-size: 1em;
+		font-family: Noto Sans JP;
+		font-weight: Thin;
+		line-height: 1.85rem;
+		letter-spacing: .05em;
+	}
+
+	.p-service__item:nth-child(2) {
+		top: 3rem;
+		right: 0;
+		width: 100%;
+		position: initial;
+	}
+
+	.p-service__item-reverse:nth-child(2) {
+		top: 3rem;
+		left: 0;
+		width: 100%;
+		position: initial;
+	}
 }

@@ -1,0 +1,13 @@
+.l-vision {
+  background: #f5f3ed;
+  padding: 3.6rem 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* sp */
+  .l-vision {
+    background: #fff;
+    padding: 1.3rem 0.5rem;
+  }
+}

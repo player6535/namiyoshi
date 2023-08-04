@@ -1,13 +1,42 @@
-.p-vision__heading{
-    color: #F87D08;
+.p-vision__heading {
+	color: #F87D08;
+	text-align: center;
 }
 
-.p-vision__headingTexts{
-    width: 92%;
-    margin: 0 auto;
+.p-vision__headingTexts {
+	width: 92%;
+	margin: 0 auto;
 }
-.p-vision__headingText{
-    line-height: 1.8em;
-    text-align: center;
-    font-weight: 300;
+
+.p-vision__headingText {
+	line-height: 1.8em;
+	text-align: center;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 899px) {
+	.p-vision__heading {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	/* sp */
+	.p-vision__heading {
+		font-size: 1.3rem;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0.2rem;
+		width: 16rem;
+	}
+
+	.p-vision__headingText {
+		font-size: 1em;
+		line-height: 1.8em;
+		letter-spacing: 0em;
+		text-align: center;
+		font-weight: 300;
+	}
 }

@@ -1,140 +1,219 @@
-
 /*===============================================================================
 # ヘッダー
 ===============================================================================*/
-.p-header__inner{
-    display: flex;
-    align-items: center;
-    height: inherit;
-}
-.p-header__nav{
-    height: inherit;
-}
-.p-header__items{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: inherit;
-}
-.p-header__item{
-    width: 100px;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-right: 30px;
-    position: relative;
-}
-.p-header__item:not(:first-child):after{
-    margin: 0 1rem;
-    content: "";
-    width: 1px;
-    height: 70px;
-    border-left: 2px #756457 dashed;
-    position: absolute;
-    right: 99%;
-}
-.p-header__img{
-    width: 35px;
-    height: 35px;
-    margin: 0 auto;
-}
-/* ハンバーガー
---------------------------------------------------------------------------------*/
-.p-hamburger{
-    position: fixed;
-    z-index: 9999;
-    top:30px;
-    right:15px;
-    width: 25px;
-    height: 16px;
-    cursor: pointer;
-}
-.p-hamburger .is-active{
-   right: 20px;
-}
-.p-hamburger span{
-    position: absolute;
-    left: 0;
-    display: inline-block;
-    width: 100%;
-    height: 2px;
-    transition: transform 0.3s;
-    background: #fff;
-}
-.p-hamburger span:first-child{
-    top:0;
-}
-.p-hamburger span:nth-child(2){
-    top: 8px;
-}
-.p-hamburger span:nth-child(3){
-    top: 16px;
+.p-header {
+  display: flex;
+  align-items: center;
+  height: inherit;
 }
 
-.p-hamburger.is-active span:first-child{
-    top:15px;
-    transform: rotate(-45deg);
+.p-header__nav {
+  height: inherit;
 }
-.p-hamburger.is-active span:nth-child(2){
-    opacity: 0;
+
+.p-header__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
 }
-.p-hamburger.is-active span:nth-child(3){
-    top: 15px;
-    transform: rotate(45deg);
+
+.p-header__item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  position: relative;
 }
+
+.p-header__item:hover {
+  background: #f5f3ed;
+  border-radius: 20px;
+}
+
+.p-header__item:not(:first-child):after {
+  margin: 0 1rem;
+  content: "";
+  width: 1px;
+  height: 70px;
+  border-left: 2px #756457 dashed;
+  position: absolute;
+  right: 99%;
+}
+
+.p-header__img {
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+}
+
+/* ハンバーガー
+--------------------------------------------------------------------------------*/
+.p-hamburger {
+  position: fixed;
+  position: absolute;
+  z-index: 9999;
+  top: 9px;
+  right: 7px;
+  width: 34px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.p-hamburger .is-active {
+  right: 20px;
+}
+
+.p-hamburger span {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  transition: transform 0.3s;
+  background: #54402D;
+}
+
+.p-hamburger span:first-child {
+  top: 0;
+}
+
+.p-hamburger span:nth-child(2) {
+  top: 6px;
+}
+
+.p-hamburger span:nth-child(3) {
+  top: 12px;
+}
+
+.p-hamburger.is-active span:first-child {
+  top: 15px;
+  background: #fff;
+  transform: rotate(-45deg);
+}
+
+.p-hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.p-hamburger.is-active span:nth-child(3) {
+  top: 15px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.js-hamburger__title.is-active {
+  color: #fff;
+  right: 0;
+}
+
+.p-hamburger__title {
+  color: #54402D;
+  font-size: 9px;
+  position: absolute;
+  top: 18px;
+  letter-spacing: 1px;
+}
+
+.p-hamburgerBox {
+  position: relative;
+  position: absolute;
+  background: rgba(155, 131, 75, 0.3);
+  border-radius: 5px;
+  top: 12px;
+  right: 12px;
+  height: 48px;
+  width: 48px;
+}
+
+@media screen and (max-width: 899px) {
+
+  /* sp */
+  .p-header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  /* pc */
+  .p-hamburgerBox {
+    display: none;
+  }
+
+  .p-hamburger {
+    display: none;
+  }
+}
+
 /* ドロワー
 --------------------------------------------------------------------------------*/
-.p-drawer-menu{
-    position: absolute;
-    position: fixed;
-    z-index: 5000;
-    top: 0;
-    left: 0;
-    display: none;
-    width: 100%;
-    height: 100vh;
-    background-color: #9B834B;
+.p-drawer-menu {
+  position: absolute;
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #9B834B;
 }
-.p-drawer-menu__inner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: inherit;
+
+.p-drawer-menu__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: inherit;
 }
-.p-drawer-menu__items{
-    display: flex;
+
+.p-drawer-menu__items {
+  display: flex;
 }
-.p-drawer-menu__item{
-    display: inline-block;
+
+.p-drawer-menu__item {
+  display: inline-block;
 }
-.p-drawer-menu__link{
-    display: flex;
-    color: #fff;
+
+.p-drawer-menu__link {
+  display: flex;
+  color: #fff;
 }
-.p-drawer-menu__item:not(:first-child){
-    margin-top: 20px;
+
+.p-drawer-menu__item:not(:first-child) {
+  margin-top: 20px;
 }
-.p-drawer-menu__home{
-    display: flex;
-    align-items: left;
-    flex-direction: column;
+
+.p-drawer-menu__home {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
 }
-.p-drawer-menu__company{
-    display: flex;
-    align-items: left;
-    flex-direction: column;
+
+.p-drawer-menu__company {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
 }
-.p-drawer-menu__logo{
-    height: 80px;
-    width: auto;
+
+.p-drawer-menu__logo {
+  margin-top: 5rem;
+  height: 70px;
+  width: auto;
 }
-.p-header__drawerImg{
-    align-items: left;
-    color: #fff;
-    width: 4rem;
-    height: 4rem;
+
+.p-header__drawerImg {
+  align-items: left;
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  width: 1rem;
+  height: 1rem;
+  filter: brightness(0) invert(1);
 }
