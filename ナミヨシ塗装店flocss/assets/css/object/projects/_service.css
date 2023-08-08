@@ -54,7 +54,7 @@
 }
 
 .p-service__body {
-	height: 100%;
+	height: auto;
 	padding: 3.5rem;
 	background: rgba(255, 255, 255, 0.5);
 }
@@ -83,6 +83,7 @@
 
 	.p-service__body {
 		background-color: transparent;
+		height: 100%;
 		padding: 1rem 0rem;
 	}
 
