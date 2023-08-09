@@ -13,7 +13,9 @@
 	font-size: 1.8em;
 	font-family: 'Noto Serif JP';
 }
-
+.p-footerContact__textBr{
+	display: none;
+}
 .p-footerContact__tel {
 	color: #F87D08;
 	font-size: 2.8em;
@@ -79,5 +81,35 @@
 @media screen and (min-width: 769px) { /* pcのみ */
   .p-footerContact{
 		display: none;
+	}
+}
+@media screen and (max-width: 550px) {
+
+  .p-footerContact__box{
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+	}
+	.p-footerContact__box__form {
+		display: inline-block;
+		color: #fff;
+		line-height: 3.3rem;
+		width: 100%;
+		background: #F87D08;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+	.p-footerContact__box__line {
+		display: inline-block;
+		color: #fff;
+		line-height: 3.3rem;
+		width: 100%;
+		background: #06C755;
+		border-radius: 5px;
+		z-index: 1500;
+		position: relative;
+	}
+	.p-footerContact__textBr{
+		display: block;
 	}
 }

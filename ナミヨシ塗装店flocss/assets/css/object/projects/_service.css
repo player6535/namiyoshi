@@ -13,7 +13,6 @@
 .p-service__item {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	flex-direction: column;
 	width: 30rem;
 	height: 19rem;
@@ -25,20 +24,27 @@
 }
 
 .p-service__sub-title {
-	font-size: 1.2em;
+	font-size: 1.5em;
 	font-weight: normal;
+	margin-bottom: 2px;
 }
 
 .p-service__text {
-	font-size: 1.2em;
+	font-size: 16px;
 	font-weight: lighter;
+	line-height: 30px;
+	letter-spacing: 0.05em;
 }
-
+.p-service__item{
+	height: 100%;
+}
 .p-service__item img {
 	height: 100%;
 	width: 100%;
 }
-
+.p-service__item-reverse .p-service__body{
+	padding-bottom: 4rem;
+}
 .p-service__item:nth-child(2) {
 	top: 3rem;
 	right: 0;
@@ -55,7 +61,8 @@
 
 .p-service__body {
 	height: auto;
-	padding: 3.5rem;
+	margin-top: 2rem;
+	padding: 1rem  2rem;
 	background: rgba(255, 255, 255, 0.5);
 }
 
