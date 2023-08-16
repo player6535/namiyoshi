@@ -1,0 +1,19 @@
+.l-worksProcess{
+	background-image: url(../../../assets/images/worksLordmap.jpg);
+	background-position: center center;
+    background-size: cover;
+		background-repeat: no-repeat;
+		height: 1954px;
+		padding-top: 120px;
+}
+@media screen and (max-width: 768px) {
+	.l-worksProcess{
+			height: 1809px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.l-worksProcess{
+			height: 2331px;
+			padding-top: 33px;
+	}
+}

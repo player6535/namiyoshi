@@ -137,11 +137,12 @@
   }
 }
 
-@media screen and (max-width: 899px) {
-  .p-menu__card {
-    padding: 2rem 2rem 1rem 2rem;
-    width: 100%;
-  }
+.p-menu__worksText {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 24px;
+  line-height: 60px;
+  border-bottom: solid 2px #F87D08;
+  border-top: solid 2px #F87D08;
 }
 
 @media screen and (max-width: 899px) {
@@ -153,5 +154,23 @@
   .p-menu__card {
     padding: 2rem 2rem 1rem 2rem;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-menu__worksTextSp {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: solid 2px #F87D08;
+    border-top: solid 2px #F87D08;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .p-menu__worksTextSp {
+    line-height: 1em;
   }
 }

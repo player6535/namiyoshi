@@ -23,6 +23,8 @@
 @import 'layout/_mv.css';
 @import 'layout/_service.css';
 @import 'layout/_vision.css';
+@import 'layout/_worksPaint.css';
+@import 'layout/_worksProcess.css';
 
 /*// ==========================================================================
 // Object
@@ -50,6 +52,9 @@
 @import 'object/projects/_location.css';
 @import 'object/projects/_contact.css';
 @import 'object/projects/_news.css';
+
+@import 'object/projects/_worksPaint.css';
+@import 'object/projects/_worksProcess.css';
 
 /*// -----------------------------------------------------------------
 // Utility

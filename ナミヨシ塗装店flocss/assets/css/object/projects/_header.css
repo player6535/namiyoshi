@@ -36,7 +36,7 @@
   border-radius: 20px;
 }
 
-.p-header__item:not(:first-child):after {
+.p-header__item:nth-child(n+3):after{
   margin: 0 1rem;
   content: "";
   width: 1px;
@@ -46,7 +46,16 @@
   top: 5px;
   right: 99%;
 }
-
+.l-indexBody .p-header__item:nth-child(2):after{
+  margin: 0 1rem;
+  content: "";
+  width: 1px;
+  height: 80px;
+  border-left: 2px #756457 dashed;
+  position: absolute;
+  top: 5px;
+  right: 99%;
+}
 .p-header__img {
   width: 35px;
   height: 35px;
@@ -54,7 +63,15 @@
   margin-top: 12px;
   padding-bottom: 0;
 }
-
+.p-header__imgLogo{
+  display: block;
+  margin-top: 9px;
+  width: 54px;
+  height: 100%;
+}
+.l-indexBody.p-header__imgLogo{
+  display: none;
+}
 /* ハンバーガー
 --------------------------------------------------------------------------------*/
 .p-hamburger {

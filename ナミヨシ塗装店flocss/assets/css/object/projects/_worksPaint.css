@@ -1,0 +1,206 @@
+.p-worksPaint__text {
+	font-size: 15px;
+}
+
+.p-worksPaint__textTitle {
+	color: #54402D;
+}
+
+.p-worksPaint__textSubtitle {
+	padding-top: 7px;
+	font-size: 15px;
+	color: #54402D;
+}
+
+.p-worksPaint__outer {
+	border-radius: 20px;
+	overflow: hidden;
+	display: flex;
+	margin-bottom: 42px;
+	border-radius: 0px;
+	height: auto;
+}
+
+.p-worksPaint__outer img {
+	object-fit: cover;
+	height: 100%;
+	max-width: 100%;
+}
+
+.p-worksPaint__outerImage {
+	position: relative;
+	height: 30rem;
+	width: 70rem;
+	border-radius: 20px;
+}
+
+.p-worksPaint__outerImage::before {
+	content: "";
+	width: 10%;
+	height: 100%;
+	display: block;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #FFF7E3 99%);
+	position: absolute;
+	top: 0;
+	left: 91%;
+}
+
+.p-worksPaint__outerText {
+	box-sizing: border-box;
+	height: 30rem;
+	width: 63rem;
+	background: #FFF7E3;
+	padding: 1.6rem .3rem 1.5rem 1rem;
+}
+
+.p-worksPaint__roof {
+	display: flex;
+	flex-direction: row-reverse;
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+	height: 17rem;
+}
+
+.p-worksPaint__roof img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.p-worksPaint__roofImage {
+	position: relative;
+	width: 50%;
+}
+
+.p-worksPaint__roof::before {
+	content: "";
+	width: 20%;
+	height: 100%;
+	display: block;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0) 0, #FFF7E3 99%);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 1100;
+}
+
+.p-worksPaint__roofText {
+	background: #FFF7E3;
+	padding: 20px 13px 20px 20px;
+	width: 50%;
+}
+
+.p-worksPaint__text {
+	margin-top: 4px;
+	font-weight: lighter;
+	line-height: 23px;
+	letter-spacing: .01em;
+}
+
+@media screen and (max-width: 768px) {
+	.p-worksPaint__outer {
+		background: #FFF7E3;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		padding-top: 33px;
+		padding-left: 19px;
+		padding-right: 19px;
+		margin-bottom: 0px;
+		overflow: visible;
+		height: 1100px;
+	}
+
+	.p-worksPaint__textTitle {
+		font-size: 20px;
+		font-family: 'Noto Serif JP', serif;
+	}
+
+	.p-worksPaint__textSubtitle {
+		font-family: 'Noto Serif JP', serif;
+	}
+
+	.p-worksPaint__outerMerit:first-child {
+		background: #FFF7E3;
+		width: 195px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.p-worksPaint__outerMerit:not(:first-child) {
+		margin-top: 20px;
+		height: 150px;
+	}
+
+	.p-worksPaint__outerImage {
+		position: relative;
+		height: 210px;
+		width: 100%;
+		overflow: hidden;
+		border-radius: 20px;
+	}
+
+	.p-worksPaint__outerImage::before {
+		display: none;
+	}
+
+	.p-worksPaint__outerImage img {
+		height: auto;
+		width: auto;
+	}
+
+	.p-worksPaint__outerText {
+		box-sizing: border-box;
+		height: 30rem;
+		width: 100%;
+		background: #FFF7E3;
+		padding: 1.6rem 0px 1.5rem 0px;
+	}
+
+	.p-worksPaint__outerMerit {
+		background: #FFFDF7;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.p-worksPaint__textUnderline {
+		border-bottom: solid 1px #F87D08;
+	}
+
+	/*===============================================================================
+	# roof
+	===============================================================================*/
+	.p-worksPaint__roof {
+		overflow: visible;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-direction: column;
+		border-radius: 0;
+		height: 100%;
+		padding-left: 19px;
+		padding-right: 19px;
+		background: #FFF7E3;
+	}
+
+	.p-worksPaint__roof::before {
+		display: none;
+	}
+
+	.p-worksPaint__roofImage {
+		width: auto;
+		height: 211px;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	.p-worksPaint__roofText {
+		background: #FFF7E3;
+		width: 100%;
+	}
+}

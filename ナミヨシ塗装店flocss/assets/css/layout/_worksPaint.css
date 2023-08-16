@@ -1,0 +1,10 @@
+.l-worksPaint{
+	box-sizing: border-box;
+	padding-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+	.l-worksPaint{
+		padding-bottom: 0px;
+		height: auto;
+	}
+}

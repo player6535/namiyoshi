@@ -1,8 +1,10 @@
 .l-vision {
   background: #f5f3ed;
-  padding: 3.6rem 0;
+  padding: 3rem 0;
 }
-
+.l-worksBody .l-vision {
+  background: #fff;
+}
 @media screen and (max-width: 768px) {
 
   /* sp */
